@@ -1,0 +1,403 @@
+@font-face {
+font-family:"ComicSansMS";
+src: url('../../../assets/comic.eot');
+src: local('Comic Sans MS'),
+	 url('../../../assets/comic.eot?#iefix') format('embedded-opentype'),
+     url('../../../assets/comic.woff') format('woff'),
+     url('../../../assets/comic.ttf') format('truetype'),
+     url('../../../assets/comic.svg#webfont') format('svg');
+}
+
+html,body,div,p,span{
+	margin:0px;
+	border-collapse: collapse;
+}
+
+button {
+    padding: 0px;
+}
+
+ * {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-repeat: no-repeat;
+    font-family: "ComicSansMs";
+    font-size: 16px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    margin: 0px;
+}
+
+#container{
+	position:absolute;
+    overflow: hidden;
+    background-image: url('../assets/wall.jpg');
+    width:800px;
+	height:600px;
+	-webkit-transform:scale(1);
+    -webkit-transform-origin: left top;
+    -moz-transform: scale(1);
+    -moz-transform-origin: left top;
+    -ms-transform: scale(1);
+    -ms-transform-origin: left top;
+    -o-transform: scale(1);
+    -o-transform-origin: left top;
+    transform: scale(1);
+    transform-origin: left top;
+}
+
+#loader{
+	position:absolute;
+	width:800px;
+	height:600px;
+	text-align:center;
+	color: white;
+    background:black;
+}
+
+#loading {
+    position: absolute;
+    font-size: 45px;
+    top: 215px;
+    left: 180px;
+}
+
+#preLoadedImage{
+	position:absolute;
+	width: 50px;
+	height: 50px;
+	top: 225px;
+	left: 400px;
+}
+
+input {
+    border: 1px solid black;
+}
+
+#content {
+    display: none;
+    width: 798px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#quest1 {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 40px;
+}
+
+#quest2 {
+    display: none;
+    position: absolute;
+    top: 93px;
+    left: 40px;
+}
+
+#quest3 {
+    display: none;
+    position: absolute;
+    top: 165px;
+    left: 40px;
+}
+
+.inp {
+    display: inline-block;
+    text-align: center;
+    margin-left: 25px;
+    width: 40px;
+}
+
+.qtext {
+    display: inline-block;
+}
+
+#prompt {
+    z-index: 5;
+    display: none;
+    background: white;
+    width: 379px;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 20px;
+    position: absolute;
+    top: 127px;
+    left: 199px;
+}
+
+#promptText {
+    font-size: 14px;
+    font-weight: bold;
+    width: 310px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 64px;
+    margin-top: -29px;
+}
+
+#kk {
+    cursor: pointer;
+    margin-left: 157px;
+    width: 40px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#sparkie {
+    width: 50px;
+}
+
+#strip1 {
+    display: none;
+    border: 1px solid;
+    background: #FF9900;
+    width: 700px;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    height: 20px;
+}
+
+.strip2 {
+    display: none;
+    background: #33FF66;
+    width: 70px;
+    height: 20px;
+    position: absolute;
+    top: 426px;
+    left: 25px;
+    border: 1px solid;
+}
+
+.remove {
+    position: static;
+    float: left;
+    box-sizing: border-box;
+    border: 0px solid;
+    border-left: 1px solid;
+}
+
+.strip3 {
+    display: none;
+    background: #3399CC;
+    z-index: 2;
+    width: 7px;
+    height: 20px;
+    position: absolute;
+    top: 492px;
+    left: 25px;
+    border: 1px solid;
+}
+
+#add {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    top: 420px;
+    left: 145px;
+    width: 68px;
+    height: 38px;
+    font-size: 19px;
+    background: #500101;
+    border: none;
+    color: white;
+    border-radius: 7px;
+}
+
+#add:hover {
+    -webkit-transform:scale(1.2);
+    -o-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#remv {
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    top: 420px;
+    left: 250px;
+    width: 100px;
+    height: 38px;
+    font-size: 19px;
+    background: #500101;
+    border: none;
+    color: white;
+    border-radius: 7px;
+}
+
+#remv:hover {
+    -webkit-transform:scale(1.2);
+    -o-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#sbmt {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    top: 511px;
+    left: 195px;
+    width: 100px;
+    height: 38px;
+    font-size: 19px;
+    background: #FEC218;
+    border: none;
+    color: white;
+    border-radius: 7px;
+}
+
+#sbmt:hover {
+    -webkit-transform:scale(1.2);
+    -o-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#cntr {
+    position: absolute;
+    display: none;
+    border: 1px solid #006600;
+    height: 151px;
+    width: 350px;
+    top: 363px;
+    left: 400px;
+}
+
+#text1 {
+    position: absolute;
+    left: 45px;
+    top: 265px;
+}
+
+#scaleText{
+    position: absolute;
+    top: 448px;
+    display: none;
+    left: 15px;
+}
+
+#total{
+    position: absolute;
+    display: none;
+    left: 745px;
+    top: 328px;
+}
+
+#text2 {
+    color: blue;
+    font-size: 16px;
+    position: absolute;
+    left: 39px;
+    top: 321px;
+}
+
+#thank {
+    display: none;
+    position: absolute;
+    font-size: 26px;
+    top: 213px;
+    left: 220px;
+}
+
+.fraction {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.frac {
+    padding: 3px;
+    line-height: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.numerator {
+    border-bottom: 1px solid;
+}
+
+#cnvs{
+    position: absolute;
+    top: 20px;
+    left: 34px;
+    font-size: 0.8em;
+}
+
+#cnvs1{
+    position: absolute;
+    top: 23px;
+    left: 308px;
+    color: red;
+    font-size: 14px;
+}
+
+#animTxt1 {
+    display: none;
+    position: absolute;
+    top: 396px;
+    left: 24px;
+}
+
+#animTxt2 {
+    position: absolute;
+    display: none;
+    color: blue;
+    top: 200px;
+    left: 24px;
+}
+
+#animTxt3 {
+    position: absolute;
+    display: none;
+    color: blue;
+    top: 223px;
+    left: 24px;
+}
+
+#animTxt4 {
+    position: absolute;
+    display: none;
+    color: blue;
+    top: 250px;
+    left: 24px;
+}
+
+#animTxt5 {
+    position: absolute;
+    display: none;
+    top: 267px;
+    left: 450px;
+}
+
+#animTxt6 {
+    position: absolute;
+    display: none;
+    top: 330px;
+    left: 450px;
+}
+
+#cnvsTxt1 {
+    position: absolute;
+    left: 27px;
+    top: 84px;
+}
+
+#cnvsTxt2 {
+    position: absolute;
+    left: 298px;
+    top: 84px;
+}

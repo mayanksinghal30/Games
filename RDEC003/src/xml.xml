@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<application name="Light The Bulb">
+	<english>
+
+		<questions>
+			<que	name=""		voice=""	page="page1"	text=""></que>
+		</questions>
+		
+		<prompts>
+			<prompt name="game" voice="" page="page1" text="MYSTIC TAROTS"></prompt>
+			<prompt name="trtcrd" voice="" page="page1" text="TAROT CARDS"></prompt>
+			<prompt name="level" voice="" page="page1" text="LEVEL"></prompt>
+			<prompt name="qustn" voice="" page="page1" text="Find the value of each Tarot card."></prompt>
+			<prompt name="ht" voice="" page="page1" text="HINT"></prompt>
+			<prompt name="pnt" voice="" page="page1" text="SCORE"></prompt>
+			<prompt name="wd" voice="" page="page1" text="Well Done!"></prompt>
+			<prompt name="mvon" voice="" page="page1" text="Click OK to move on!"></prompt>
+			<prompt name="k" voice="" page="page1" text="OK"></prompt>
+			<prompt name="congo" voice="" page="page1" text="Congratulations! "></prompt>
+			<prompt name="cong" voice="" page="page1" text="You have successfully cleared level"></prompt>
+			<prompt name="lvl" voice="" page="page1" text="LEVEL"></prompt>
+			<prompt name="clr" voice="" page="page1" text="You have already cleared this level."></prompt>
+			<prompt name="nxttxt" voice="" page="page1" text="Click to move ahead"></prompt>
+			<prompt name="sbmt1" voice="" page="page1" text="Submit"></prompt>
+			<prompt name="nxt11" voice="" page="page1" text="START"></prompt>
+			<prompt name="tryAgain" voice="" page="page1" text="Hmm… You are on the right track."></prompt>
+			<prompt name="tryAgain1" voice="" page="page1" text="Observe that the sum of the cards is given to you!"></prompt>
+			<prompt name="tryAgain2" voice="" page="page1" text="Press OK and try again!"></prompt>
+			<prompt name="gameOver" voice="" page="page1" text="To clear a level you have to score at least 50 points within the time limits"></prompt>
+			<prompt name="levelComplete" voice="" page="page1" text="You have completed this level"></prompt>
+			<prompt name="idle" voice="" page="page1" text="Write the values of the cards in the blanks given. Press enter to submit your answer."></prompt>
+			<prompt name="over" voice="" page="page1" text="Congrats you have completed the Game!"></prompt>
+			<prompt name="highlightText1" voice="" page="page1" text="Which card should be found first?"></prompt>
+			<prompt name="highlightText2" voice="" page="page1" text="Press OK to try again!"></prompt>
+			<prompt name="highlightText3" voice="" page="page1" text="We find the value of "></prompt>
+			<prompt name="highlightText4" voice="" page="page1" text="first. "></prompt>
+			<prompt name="highlightText5" voice="" page="page1" text="It can be solved using only one equation."></prompt>
+			<prompt name="highlightText6" voice="" page="page1" text="Press OK and try again!"></prompt>
+			<prompt name="highlightText7" voice="" page="page1" text="Oops! That’s incorrect!"></prompt>
+			<prompt name="highlightText8" voice="" page="page1" text="Now find value of other card(s)!"></prompt>
+			<prompt name="tryAgain1" voice="" page="page1" text="Observe that the sum of the cards is given to you!"></prompt>
+			<prompt name="tryAgain2" voice="" page="page1" text="Press OK and try again!"></prompt>
+            <prompt name="guess1" voice="" page="page1" text="You seem to be only guessing!"></prompt>
+            <prompt name="guess2" voice="" page="page1" text="Try to reason out your answer instead."></prompt>
+            <prompt name="guess3" voice="" page="page1" text="Start again. Press OK to move on."></prompt>
+            <prompt name="cannotComplete" voice="" page="page1" text="Oops! You failed in level "></prompt>
+            <prompt name="subText1" voice="" page="page1" text="The symbol "></prompt>
+            <prompt name="subText2" voice="" page="page1" text=" is replaced by its value!"></prompt>
+            <prompt name="subText3" voice="" page="page1" text="Now try again! "></prompt>
+            <prompt name="subText4" voice="" page="page1" text="Press OK to proceed."></prompt>
+            <prompt name="subText5" voice="" page="page1" text="We substitute the value of "></prompt>
+            <prompt name="subText6" voice="" page="page1" text="in equation below to get :!"></prompt>
+		</prompts>
+		
+		<instructions>
+			<instruction name="head" voice="" page="" text="Instructions and Rules of Scoring"> </instruction>
+			<instruction name="main" voice="" page="" text="When one completes the identity by connecting an expression on the left to the corresponding expression on the right, the circuit is completed and the bulb glows."> </instruction>
+			<instruction name="i1" voice="" page="" text="Use identities to select an expression in the oval which equals an expression in the rectangular region."> </instruction>
+			<instruction name="i2" voice="" page="" text="Click the radio button to put the wire connected to the battery in the oval region."> </instruction>
+			<instruction name="i3" voice="" page="" text="Click on the radio button to put the wire connected to the bulb in the rectangular region."> </instruction>
+			<instruction name="i4" voice="" page="" text="If the two expressions chosen are equal, the circuit is complete and the bulb glows green. You win 1000 coins!"> </instruction>
+			<instruction name="i5" voice="" page="" text="If you select expressions which are not equal, You lose 250 coins!"> </instruction>
+			<instruction name="i6" voice="" page="" text="You can seek Sparkie’s help at the cost of 100 coins each time. "> </instruction>
+			<instruction name="i7" voice="" page="" text="Sparkie gives you 3000 coins at the beginning of the game!"> </instruction>
+		</instructions>
+		
+		<miscellaneous>
+		</miscellaneous>		
+
+	</english>
+
+</application>
+

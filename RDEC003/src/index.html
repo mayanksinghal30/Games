@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>RDEC003</title>
+		<link rel="stylesheet" 	type="text/css" href="../css/style.css">
+		<script src="../../../libs/jquery-1.7.1.min.js" type="text/javascript"></script>
+		<script src="../../../libs/PxLoader.js"	type="text/javascript"></script>
+		<script src="../../../libs/PxLoaderImage.js" type="text/javascript"></script>
+		<script src="../../../libs/loadxmldoc.js" type="text/javascript"></script>
+		<script src="../../../libs/common.js" type="text/javascript"></script>
+		<script src="../../../libs/jquery-ui-1.10.1.custom.min.js"></script>
+	    <script src="../../../libs/jquery_ui_touch.js"></script>
+        <script src="../../../libs/parameterPassing.js" type="text/javascript"></script>
+		<script src="../lib/script.js" type="text/javascript"></script>
+	</head>
+
+	<body  onresize="containerResize();" onload="containerResize();">
+	<div id="container">
+		<div id="loader" align="center">
+            <p id="loading">Loading...</p>
+            <img src="../assets/loader.gif" id="preLoadedImage" />
+        </div>
+        
+        <div id="thank">
+            Thanks for Playing..!!
+        </div>       
+        <div id="content">
+            <div id="quest1">
+                <p id="q1text" class="qtext">
+                </p>
+                <input type="text" pattern="[0-9]*" id="ans1" class="inp" />
+            </div>
+            <div id="quest2">
+                <p id="q2text" class="qtext">
+                </p>
+                <input type="text" pattern="[0-9]*" id="ans2" class="inp" />
+            </div>
+            <div id="quest3">
+                <p id="q3text" class="qtext">
+                </p>
+                <input type="text" pattern="[0-9]*" id="ans3" class="inp" />
+            </div>
+            <div id="prompt">
+                <img id="sparkie" src="../assets/sparkie.png"/>
+                <p id="promptText">
+                </p>
+                <button id="kk">
+                    OK
+                </button>
+            </div>
+            <div id="strip1">
+            </div>
+            <div id="animTxt1" class="animT">  
+            </div>
+            <div id="animTxt2" class="animT">
+            We know that 10 hundredths make a tenth.
+            </div>
+            <div id="animTxt3" class="animT">
+                Also, 10 tenths make a whole or 1.
+            </div>
+            <div id="animTxt4" class="animT">
+                100 hundredths (or 100 &#215;<div class='fraction'><div class='frac numerator'>1</div><div class='frac'>100</div></div>) make a whole or 1.
+            </div>
+            <div id="animTxt5" class="animT">
+            </div>
+            <div id="animTxt6" class="animT">
+            </div>
+            <button disabled="disabled" id="add">
+                ADD
+            </button>
+            <button disabled="disabled" id="remv">
+                REMOVE
+            </button> 
+            <button disabled="disabled" id="sbmt">
+                SUBMIT
+            </button>
+            <div id="cntr">
+                <div id="cnvs1"></div>
+                <div id="cnvs"></div>
+                <div id="cnvsTxt1">
+                </div>
+                <div id="cnvsTxt2">
+                </div>
+                <canvas id="cntrCanvas" width="350px">
+                </canvas>
+            </div>
+            <div id="text1">
+            </div>   
+            <div id="scaleText">
+            one-tenth
+            </div>
+            <div id="total">
+            1
+            </div>
+            <div id="text2">
+            </div>
+        </div>
+    </div>
+<script>
+	var getParameters = getURLParameters();
+</script>
+
+</body>
+</html>

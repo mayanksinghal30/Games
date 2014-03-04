@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="cache-control" charset="utf-8">
+<title>RINT002</title>
+
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../../../libs/jquery.js"></script>
+    <script src="../../../libs/jquery_ui.js"></script>
+	<script src="../../../libs/loadxmldoc.js"></script>
+    <script src="../../../libs/common.js"></script>
+	<script src="../../../libs/parameterPassing.js"></script>
+	<script type="text/javascript" src="../../../libs/ui.js"></script>
+	
+	<script src="../../../libs/PxLoader.js"></script>
+	<script  src="../../../libs/PxLoaderImage.js"></script>
+    
+   	<script src="../libs/script.js"></script>
+    <script>
+    	$(function(){
+			var xmlfile = 'xml.xml';		
+			
+			gameObj = new REM();	
+			
+			var imageArray = new Array('Bg.png','sparky.gif');
+			
+			var loader = new PxLoader(); 
+			
+			$.each(imageArray,function(key,value){
+				var pxImage = new PxLoaderImage('../assets/'+value); 
+				loader.add(pxImage); 
+			}); 
+			
+			loader.addCompletionListener(function() 
+			{ 
+				loadXML(xmlfile, function() {
+					
+					var getParameters = getURLParameters();
+				
+					if (typeof getParameters['noOfLevels'] == "undefined") 
+					{ 
+						$('#ErrorPrompt').html("Please pass 'noOfLevels' "); 
+						return false;
+					} 
+					else 
+					{
+						noOfLevels = getParameters['noOfLevels'];
+						if (getParameters['noOfLevels']!='1')
+						{
+							$('#ErrorPrompt').html("No of levels incorrectly passed");
+							return false;
+						}
+						else
+						 gameObj.loadHome();
+					}
+				})	
+			}); 
+			loader.start();
+		});
+    </script>
+</head>
+
+<body onresize="containerResize();" onload="containerResize()">
+    <div id="PreLoader">
+    		<div id="ErrorPrompt"></div>
+            <span id="LoadingText">Loading...</span>
+            <img id="LoadingImg"  src="../../../assets/loader.gif"/>
+    </div>
+	
+    <div id="container" class="DispNone relative">
+    	<div id="highLight1" class="high"></div>
+        <div id="highLight2" class="high"></div>
+        <div id="Q1Sparkie" class="absolute sparkie"></div>
+        <div id="Q1Header"></div>
+        <div id="Q1T0" class="left"></div>
+    	<div id="Q1" class="FirstLine DispNone">
+			<div id="DDContainer1_1" class="DispNone DDContainer">
+				<span id="Q1T1" class="Inline left"></span>
+				<select name="" id="Q1DD1" class="Inline"></select>
+				<div class="clearBoth"></div>
+			</div>
+			<div id="DDContainer1_2" class="DispNone DDContainer">           
+	            <span id="Q1T2" class="Inline left"></span>
+	            <select name="" id="Q1DD2" class="Inline"></select>
+	            <div class="clearBoth"></div>
+            </div>
+            <div id="DDContainer1_3" class="DispNone DDContainer">
+	            <span id="Q1T3" class="Inline left"></span>
+	            <select name="" id="Q1DD3" class="Inline"></select>
+	            <div class="clearBoth"></div>
+	        </div>
+            <div id="DDContainer1_4" class="DispNone DDContainer">
+	            <span id="Q1T4" class="Inline left"></span>
+	            <select name="" id="Q1DD4" class="Inline"></select>
+	            <div class="clearBoth"></div>
+	        </div>
+            <input type="button" class="next DispNone" id="Q1Next" >
+    	</div>
+        <div id="Q2" class="FirstLine relative DispNone">
+        	<div id="Q2Sample" class="FirstLine">
+           		<table>
+           			<tr>
+           				<td>
+			                <span id="sampleText"></span>
+                        </td>
+                        <td>
+                        	<input type='text' disabled value='+10' class='disabled textbox' />
+                        </td>
+           			</tr>
+           		</table>
+            </div>
+            <div id="Q2Questions">
+            	<table id="Q2QuestionsTable"></table>
+            </div>
+            <input type="button" id="Q2Prev" class="previous floatLeft">
+            <input type="button" id="Q2Next" class="next floatLeft DispNone">
+            <div class="clearBoth"></div>
+        </div>
+        <div id="Q3" class="FirstLine relative DispNone">
+       		<div id="Q3Sample" class="FirstLine">
+           		<table>
+           			<tr>
+           				<td>
+			                <span id="sampleText3_1"></span>
+                        </td>
+                        <td>
+                        	<input type='text' disabled value='6-3' class='disabled textbox' />
+                        </td>
+                        <td>
+                        	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td>
+			                <span id="sampleText3_2"></span>
+                        </td>
+                        <td>
+                        	<input type='text' disabled value='6-3' class='disabled textbox' />
+                        </td>
+           			</tr>
+           		</table>
+            </div>
+            <div id="Q3Questions">
+            	<table id="Q3QuestionsTable"></table>
+            </div>
+       		<input type="button" id="Q3Prev" class="previous floatLeft">
+            <input type="button" id="Q3Next" class="next floatLeft DispNone">
+            <div class="clearBoth"></div>
+        </div>
+        <div id="Q4" class="FirstLine relative DispNone">
+        	<div id="Q4Questions">
+            	<table id="Q4QuestionsTable"></table>
+            </div>
+       		<input type="button" id="Q4Prev" class="previous floatLeft">
+            <input type="button" id="Q4Next" class="next floatLeft DispNone">
+            <div class="clearBoth"></div>
+        </div>
+        
+        
+        <div id="MsgBox">
+			<div id="MsgBoxContainer">
+		        <div id="sparkie" class="absolute sparkie"></div>
+                <span id="msg1"></span>
+				<button id="ok" onclick="gameObj.OkClick()"></button>
+	        </div>
+	        <div id="dragText"></div>
+		</div>
+    	<div id="BlockMainDiv" class="DispNone"></div>
+    </div>
+</body>	
+</html>

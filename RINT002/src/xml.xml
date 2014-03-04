@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application name="">
+	<english>
+		<questions>
+			<que name="q_1" text="Choose the correct option: " page="page1" voice=""/>
+			<que name="q_2" text=" stands for " page="page1" voice=""/>
+			<que name="q_3" text="Now simplify and write as shown in example: " page="page1" voice=""/>
+			<que name="q_4" text="&lt;br&gt;Let us try simplifying more problems now! &lt;br&gt; Remove the brackets and write as shown in the example:" page="page1" voice=""/>
+			<que name="q_5" text="&lt;br&gt;Example: -(-6) + (-3) = " page="page1" voice=""/>
+			<que name="q_6" text="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 6 + (-3) = " page="page1" voice=""/>
+			<que name="q_7" text="" page="page1" voice=""/>
+			<que name="q_8" text="" page="page1" voice=""/>
+			<que name="q_9" text="" page="page1" voice=""/>
+			<que name="q_10" text="" page="page1" voice=""/>
+		</questions>
+		<prompts>
+			<prompt name="p_1" text="Check the sign outside the bracket." page="page1" voice=""/>
+			<prompt name="p_2" text="Remember that '+' outside the bracket stands for 'same as'." page="page1" voice=""/>
+			<prompt name="p_3" text="Remember that '-' outside the bracket stands for 'opposite of'." page="page1" voice=""/>
+			<prompt name="p_4" text="Please enter your answer." page="page1" voice=""/>
+			<prompt name="p_5" text="Try again! Please check the number and its sign." page="page1" voice=""/>
+			<prompt name="p_6" text="Please enter + or - sign before the number.	" page="page1" voice=""/>
+			<prompt name="p_7" text="Remember, #questionString# means " page="page1" voice=""/>
+			<prompt name="p_8" text="Try again! Just simplify the brackets first." page="page1" voice=""/>
+			<prompt name="p_9" text="Well Done! Now solve the expression and write the answer in the blank." page="page1" voice=""/>
+			<prompt name="p_10" text="Please check the number and its sign carefully.Now try to solve the expression and write the answer in the blank." page="page1" voice=""/>
+		</prompts>
+		<instructions>
+			<instruction name="i_1" text="Let us assume, &lt;br&gt; '-' outside ( ) stands for 'OPPOSITE of' ( ) &lt;br&gt; For example: -(+5) stands for 'opposite of (+5)' &lt;br&gt; '+' outside ( ) stands for 'SAME as' ( ) &lt;br&gt; For example: +(+5) stands for 'same as (+5)'  " page="page1" voice=""/>
+			<instruction name="i_2" text="Is" page="page1" voice=""/>
+			<instruction name="i_3" text=" or " page="page1" voice=""/>
+			<instruction name="i_4" text="&lt;br&gt; So, &lt;br&gt;" page="page1" voice=""/>
+			<instruction name="i_5" text="Sorry, you cannot put two signs next to each other without brackets. &lt;br&gt;See the example." page="page1" voice=""/>
+			<instruction name="i_6" text="" page="page1" voice=""/>
+			<instruction name="i_7" text="" page="page1" voice=""/>
+			<instruction name="i_8" text="" page="page1" voice=""/>
+			<instruction name="i_9" text="" page="page1" voice=""/>
+			<instruction name="i_10" text="" page="page1" voice=""/>
+		</instructions>
+		<miscellaneous>
+			<misc name="m_1" text="same as " page="page1" voice=""/>
+			<misc name="m_2" text="opposite of " page="page1" voice=""/>
+			<misc name="m_3" text="+(+10) = " page="page1" voice=""/>
+			<misc name="m_4" text=" 6 + (-3) =" page="page1" voice=""/>
+			<misc name="m_5" text=" , -(-6) + (-3) =" page="page1" voice=""/>
+			<misc name="m_6" text="" page="page1" voice=""/>
+			<misc name="m_7" text="" page="page1" voice=""/>
+			<misc name="m_8" text="" page="page1" voice=""/>
+			<misc name="m_9" text="" page="page1" voice=""/>
+			<misc name="m_10" text="" page="page1" voice=""/>
+			<misc name="m_11" text="" page="page1" voice=""/>
+			<misc name="m_12" text="" page="page1" voice=""/>
+			<misc name="m_13" text="" page="page1" voice=""/>
+			<misc name="m_14" text="" page="page1" voice=""/>
+			<misc name="m_15" text="" page="page1" voice=""/>
+			<misc name="m_16" text="" page="page1" voice=""/>
+			<misc name="m_17" text="" page="page1" voice=""/>
+			<misc name="m_18" text="" page="page1" voice=""/>
+			<misc name="m_19" text="" page="page1" voice=""/>
+			<misc name="m_20" text="" page="page1" voice=""/>
+			<misc name="m_21" text="" page="page1" voice=""/>
+			<misc name="m_22" text="" page="page1" voice=""/>
+			<misc name="m_23" text="" page="page1" voice=""/>
+			<misc name="m_24" text="" page="page1" voice=""/>
+			<misc name="m_25" text="" page="page1" voice=""/>
+			<misc name="m_26" text="" page="page1" voice=""/>
+			<misc name="m_27" text="" page="page1" voice=""/>
+			<misc name="m_28" text="" page="page1" voice=""/>
+			<misc name="m_29" text="" page="page1" voice=""/>
+			<misc name="m_30" text="" page="page1" voice=""/>
+			<misc name="m_31" text="" page="page1" voice=""/>
+			<misc name="m_32" text="" page="page1" voice=""/>
+			<misc name="m_33" text="" page="page1" voice=""/>
+			<misc name="m_34" text="" page="page1" voice=""/>
+			<misc name="m_35" text="" page="page1" voice=""/>
+			<misc name="m_36" text="" page="page1" voice=""/>
+			<misc name="m_37" text="" page="page1" voice=""/>
+			<misc name="m_38" text="" page="page1" voice=""/>
+			<misc name="m_39" text="" page="page1" voice=""/>
+			<misc name="m_40" text="" page="page1" voice=""/>
+			<misc name="previous" text="Previous" page="page1" voice=""/>
+			<misc name="select" text="--Select--" page="page1" voice=""/>
+			<misc name="submit" text="Submit" page="page1" voice=""/>
+			<misc name="quit" text="Quit" page="page1" voice=""/>
+			<misc name="next" text="Next" page="page1" voice=""/>
+			<misc name="ok" text="Ok" page="page1" voice=""/>
+			<misc name="drag" text="You can drag me!" page="page1" voice=""/>
+			<misc name="gameOver" text="Game Over" page="page1" voice=""/>
+			
+		</miscellaneous>
+	</english>
+	<hindi/>
+	<gujarati/>
+</application>

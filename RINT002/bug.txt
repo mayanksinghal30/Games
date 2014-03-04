@@ -1,0 +1,3 @@
+Q2)
+	- if the number in question and the number answerd in answer are different then the child gets one more attempt
+	- but if both the times the chid enters wrong number then system gives the answer
